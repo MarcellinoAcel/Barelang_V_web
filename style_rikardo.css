@@ -1,0 +1,59 @@
+.background-image {
+    background-image: url('images/Swerve.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:('images/gajah.jpeg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(35%);
+
+    z-index: -1; /* Pastikan gambar di belakang konten */
+    
+}
+.tulisan1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:azure;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+.tP {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif; 
+    color: azure;
+}
+
+.tP ol {
+    list-style-type: none; 
+    padding-left: 0; 
+    color: azure;
+}
+
+.task {
+    display: table; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    color: azure;
+}
+
+.label, .value {
+    display: table-cell; 
+    padding: 0 10px; 
+    color: azure;
+}
+
+.label {
+    width: 200px; 
+    font-weight: bold; 
+    text-align: right;
+    color: aquamarine; 
+}
+
+.value {
+    text-align:left; 
+    color: azure;
+}

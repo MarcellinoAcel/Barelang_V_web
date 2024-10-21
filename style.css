@@ -6,14 +6,16 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(216, 191, 123);
+    background-color:#e9dfc9;
     color: aliceblue;
 }
 header {
-    background-color: rgb(2, 1, 65);
+    position: relative;
+    background-color: #00053b;
     color: white;
     padding: 10px 0;
     text-align: center;
+    z-index: 1;
 }
 
 footer {
@@ -63,7 +65,7 @@ section {
 nav ul {
     display: flex;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 nav ul li {
@@ -87,13 +89,13 @@ nav ul li a:hover {
 
 .nav-links li {
     display: inline; /* Display links inline */
-    margin-left: 20px; /* Space between links */
+    margin-left: 0px; /* Space between links */
 }
 
 .button {
     display: inline-block; /* Make link behave like a button */
-    padding: 10px 20px; /* Add padding */
-    background-color: rgb(2, 1, 65);
+    padding: 10px 10px; /* Add padding */
+    background-color:#00053b;
     color: white; /* Text color */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
@@ -101,8 +103,8 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color:rgb(216, 191, 123);
-    color: black;
+    background-color:#020d83;
+    color: white ;
 }
 
 .gallery{
@@ -125,13 +127,157 @@ nav ul li a:hover {
 }
 
 .slide{
-    display: none;
+
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
 }
 .slide img{
     width: 100%;
     height: auto;
     object-fit: contain;
 }
+
+/* daffa */
+.image-member-container{
+    margin-top: 100px;
+}
+.color-block {
+    background-color: rgb(10, 29, 71);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Membuat blok warna selebar halaman */
+    position: relative;
+    top: 30px; /* Jarak dari bagian atas halaman */
+    z-index: 1;
+}
+.color-block h2{
+    text-align: center;
+    margin: auto;
+}
+.slide h2, p{
+    color:#000000;
+}
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Galeri anggota tim */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.gallery-member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.member-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi pada background */
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.member-card p {
+    font-size: 1em;
+    color: #000000;
+}
+.image-member {
+    width: 100%; /* The image will scale to 100% of its parent container's width */
+    height: auto; /* The height will adjust proportionally */
+    max-width: 400px; /* Optional: set a maximum width if needed */
+    object-fit: cover;
+}
+/* daffa */
+
+/* Rikardo */
+.background-image {
+    background-image: url('images/Swerve.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter:brightness(35%);
+    z-index: -1;
+}
+.tulisan1, .tulisan1 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tP {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif; 
+    color: white;
+    z-index: 2;
+    position: relative;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tP ol {
+    list-style-type: none; 
+    padding-left: 0; 
+    color: white;
+}
+
+.task {
+    display: table; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    color: white;
+}
+
+.label, .value {
+    display: table-cell; 
+    padding: 0 10px; 
+    color: white;
+}
+
+.label {
+    width: 200px; 
+    font-weight: bold; 
+    text-align: right;
+    color: white; 
+}
+
+.value {
+    text-align:left; 
+    color: white;
+}
+
+/* Rikardo */
+
 
 img{
     width: 50%;
