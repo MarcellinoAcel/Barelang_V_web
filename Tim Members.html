@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Member</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+
+    <div class="color-block">
+        <h1>TEAM MEMBERS</h1>
+    </div>
+
+    <div class="gallery">
+        <div class="slide fade">
+            <img src="images/profil.png" alt="Member 1">
+            <h2>RIKARDO HAREFA</h2>
+            <p>Mechanical</p>
+        </div>
+        <div class="slide fade">
+            <img src="images/profil.png" alt="Member 2">
+            <h2>Muhammad Zainul Daffa</h2>
+            <p>Electrical</p>
+        </div>
+        <div class="slide fade">
+            <img src="images/profil.png" alt="Member 3">
+            <h2>Bernard Marcelino Sitio</h2>
+            <p>Programmer</p>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -48,4 +48,36 @@ function showSlides(n) {
 let slideInterval = setInterval(function () {
     plusSlides(1);
 }, 5000); // 5 seconds interval
+// *************************************************************
+document.addEventListener('DOMContentLoaded', () => {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    // Menampilkan slide awal
+    showSlide(slideIndex);
+
+    // Kontrol tombol sebelumnya dan berikutnya
+    document.querySelector('.prev').onclick = () => changeSlide(-1);
+    document.querySelector('.next').onclick = () => changeSlide(1);
+
+    function changeSlide(n) {
+        slideIndex = (slideIndex + n + slides.length) % slides.length; // Menghitung indeks slide berikutnya
+        showSlide(slideIndex);
+    }
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? 'block' : 'none'; // Menampilkan slide yang sesuai
+            dots[i].className = dots[i].className.replace(' active', ''); // Menghapus kelas aktif
+        });
+        dots[index].className += ' active'; // Menambahkan kelas aktif pada dot saat ini
+    }
+
+    // Interval otomatis untuk galeri
+    setInterval(() => changeSlide(1), 5000); // Interval 5 detik
+});
+
+
+
 
