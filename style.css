@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(66, 66, 66);
+    background-color:rgb(216, 191, 123);
     color: aliceblue;
 }
 header {
@@ -78,6 +78,31 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #007bff; /* Change to your desired hover color */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    display: inline; /* Display links inline */
+    margin-left: 20px; /* Space between links */
+}
+
+.button {
+    display: inline-block; /* Make link behave like a button */
+    padding: 10px 20px; /* Add padding */
+    background-color: rgb(2, 1, 65);
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color:rgb(216, 191, 123);
+    color: black;
 }
 
 .gallery{
