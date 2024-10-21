@@ -5,27 +5,107 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:rgb(66, 66, 66);
     color: aliceblue;
 }
+header {
+    background-color: rgb(2, 1, 65);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Makes the logo on the left and nav on the right */
+    align-items: center; /* Vertically aligns items in the center */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
 
 .logo {
-    width: 50px; /* Adjust the size of the logo as needed */
-    position: absolute;
-    top: 10px;
-    left: 20px;
+    width: 25px; /* Adjust the logo size */
+    margin-right: 10px;
+}
+
+
+.home-link {
+    list-style: none;
+}
+
+.home-link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change to your desired hover color */
 }
 
 .gallery{
     position: relative;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .slide{
     display: none;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 img{
@@ -41,35 +121,6 @@ img{
     padding: 0;
 }
 
-.prev,.next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    margin-top: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    z-index: 10;
-}
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev{
-    left: 0;
-}
-
-/* On hover, add a black background color with a little bit of opacity */
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Dots/bullets */
 .dots-container {
@@ -101,55 +152,3 @@ img{
     from {opacity: .4} 
     to {opacity: 1}
 }
-
-header {
-    background-color: darkgoldenrod;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer {
-    background-color: #008080;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.gallery-container img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
