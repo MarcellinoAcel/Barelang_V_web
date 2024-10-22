@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e9dfc9;
+    color: aliceblue;
+}
+
+header {
+    position: relative;
+    background-color: #00053b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content_about_us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.content_about_us p {
+    width: 60%;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.contact_us_section {
+    background-color:black;
+    padding: 50px 0;
+    width: 100%
+}
+
+.contact_us {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact_us h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact_us p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact_us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact_us ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact_us ul li .icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact_us a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact_us a:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+.home-link {
+    list-style: none;
+}
+
+.home-link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #00053b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #020d83;
+    color: white;
+}
+
+.gallery {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide {
+
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* daffa */
+.image-member-container {
+    margin-top: 100px;
+}
+
+.color-block {
+    background-color: rgb(10, 29, 71);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+.color-block h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.slide h2,
+p {
+    color: #000000;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.gallery-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.member-card p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.image-member {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.background-image-electrical {
+    background-image: url('images/pcb.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(10%);
+    z-index: -1;
+}
+
+/* daffa */
+
+/* Rikardo */
+.background-image {
+    background-image: url('images/Swerve.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(35%);
+    z-index: -1;
+}
+
+.tulisan1,
+.tulisan1 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tP {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    color: white;
+    z-index: 2;
+    position: relative;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tP ol {
+    list-style-type: none;
+    padding-left: 0;
+    color: white;
+}
+
+.task {
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.label,
+.value {
+    display: table-cell;
+    padding: 0 10px;
+    color: white;
+}
+
+.label {
+    width: 200px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+}
+
+.value {
+    text-align: left;
+    color: white;
+}
+
+.division-button {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.division-button li {
+    margin: 0 10px;
+}
+
+.button-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #e9dfc9;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-icon img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.button-icon:hover {
+    background-color: #020d83;
+    color: white;
+}
+
+/* Rikardo */
+
+
+img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+#team {
+    background-color: black;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Dots/bullets */
+.dots-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
